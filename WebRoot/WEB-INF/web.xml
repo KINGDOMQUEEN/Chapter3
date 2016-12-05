@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://www.abc.com/tag</taglib-uri>
+			<taglib-location>/WEB-INF/tag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+	<context-param>
+		<param-name>DBLoginName</param-name>
+		<param-value>user1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>DBLoginPassword</param-name>
+		<param-value>123</param-value>
+	</context-param>
+	<context-param>
+		<param-name>msg</param-name>
+		<param-value>msg.properties</param-value>
+	</context-param>
+
+
+
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>loginCheck</servlet-name>
+		<servlet-class>MyHello.loginCheck</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>registServlet</servlet-name>
+		<servlet-class>MyServlet.registServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RndServlet</servlet-name>
+		<servlet-class>MyServlet.RndServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RequestLister</servlet-name>
+		<servlet-class>MyServlet.RequestLister</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RequestListener1</servlet-name>
+		<servlet-class>MyServlet.RequestListener1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SessionListener</servlet-name>
+		<servlet-class>MyServlet.SessionListener</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Listen6</servlet-name>
+		<servlet-class>MyServlet.Listen6</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DBExcel</servlet-name>
+		<servlet-class>MyServlet.DBExcelServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegFormServlet</servlet-name>
+		<servlet-class>MyServlet.RegFormServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginCheck</servlet-name>
+		<url-pattern>/MyHello/loginCheck</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>registServlet</servlet-name>
+		<url-pattern>/MyServlet/registServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RndServlet</servlet-name>
+		<url-pattern>/MyServlet/RndServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RequestLister</servlet-name>
+		<url-pattern>/MyServlet/RequestLister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RequestListener1</servlet-name>
+		<url-pattern>/MyServlet/RequestListener1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionListener</servlet-name>
+		<url-pattern>/MyServlet/SessionListener</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Listen6</servlet-name>
+		<url-pattern>/MyServlet/Listen6</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DBExcel</servlet-name>
+		<url-pattern>/MyServlet/DBExcelServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegFormServlet</servlet-name>
+		<url-pattern>/MyServlet/RegFormServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>MyServlet.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SendMailServlet</servlet-name>
+		<servlet-class>MyServlet.SendMailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ContextListener2</servlet-name>
+		<servlet-class>MyServlet.ContextListener2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/MyServlet/UploadServlet</url-pattern>
+	</servlet-mapping>
+<!--  
+	<listener>
+		<listener-class>MyServlet.ContextListener2</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>MyServlet.RequestListener1</listener-class>
+	</listener>
+	<listener>
+		<listener-class>MyServlet.SessionListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>MyServlet.Listen6</listener-class>
+	</listener>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+    <error-code>404</error-code>
+    <location>/e404.jsp</location>
+     </error-page>
+     
+     -->
+	
+</web-app>
